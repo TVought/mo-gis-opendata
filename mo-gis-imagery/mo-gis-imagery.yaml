@@ -1,0 +1,41 @@
+Name: Missouri Statewide Imagery Collection
+Description: | 
+  The Missouri Spatial Data Information Service is responsible for the storage and distribution of digital spatial data and aerial photography related to the state of Missouri. 
+Documentation: https://data-msdis.opendata.arcgis.com/pages/imagery
+Contact: msdismail@missouri.edu
+ManagedBy: Missouri Spatial Data Information Service 
+UpdateFrequency: Missouri's imagery cycle is based on funding availability.
+Tags:
+- aws-pds
+- aerial imagery
+- agriculture
+- earth observation
+- geospatial
+- imaging
+- mapping
+- natural resource
+- planning
+- sustainability
+License: "Access to Missouri aerial imagery distributed by the Missouiri Spatial Data Information Service (MSDIS) is governed by Creative Commons 4.0 (CC0):: https://creativecommons.org/licenses/by/4.0/"
+Resources:
+- Description: State of Missouri aerial imagery.
+  ARN: arn:aws:s3:::mo-gis-imagery
+  Region: us-west-2
+  Type: S3 Bucket
+Resources:
+- Description: Notification for State of Missouri aerial imagery.
+  ARN: arn:aws:sns:us-west-2:092382576634:mo-gis-imagery-object_created
+  Region: us-west-2
+  Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: Fly MO Imagery
+      URL:  https://www.flymoimagery.com/
+      AuthorName: Missouri Office of Geospatial Information
+    - Title: The Missouri Map
+      URL: https://arcg.is/0bSreG0
+      AuthorName: Missouri Spatial Data Information Service
+    - Title: 2023 Missouri Imagery Webinar
+      URL: https://msdis-archive.missouri.edu/archive/MSDIS_Outbox/2022_2023_ImageryWebinars/07%20March%202023%20Webinar.mp4
+      AuthorName: Missouri GIS Advisory Council
+ 
