@@ -1,7 +1,7 @@
-Name: Missouri Statewide Imagery Collection
+Name: Missouri Statewide Aerial Imagery Collection
 Description: | 
-  The Missouri Spatial Data Information Service is responsible for the storage and distribution of digital spatial data and aerial photography related to the state of Missouri. 
-Documentation: https://data-msdis.opendata.arcgis.com/pages/imagery
+  The Missouri Spatial Data Information Service (MSDIS) is responsible for the storage and distribution of digital spatial data, aerial photography, and LiDAR related to the state of Missouri. 
+Documentation: https://data-msdis.opendata.arcgis.com
 Contact: msdismail@missouri.edu
 ManagedBy: Missouri Spatial Data Information Service 
 UpdateFrequency: Missouri's imagery cycle is based on funding availability.
@@ -16,18 +16,25 @@ Tags:
 - natural resource
 - planning
 - sustainability
-License: "Access to Missouri aerial imagery distributed by the Missouiri Spatial Data Information Service (MSDIS) is governed by Creative Commons 4.0 (CC0):: https://creativecommons.org/licenses/by/4.0/"
+License: Access to Missouri aerial imagery distributed by the Missouri Spatial Data Information Service (MSDIS) is governed by Creative Commons BY 4.0 (CC BY 4.0):: https://creativecommons.org/licenses/by/4.0/   
 Resources:
-- Description: State of Missouri aerial imagery.
+- Description: Aerial imagery of the state of Missouri.
   ARN: arn:aws:s3:::mo-gis-imagery
   Region: us-west-2
   Type: S3 Bucket
-Resources:
-- Description: Notification for State of Missouri aerial imagery.
+  Explore:
+  - "[Browse Bucket](https://mo-gis-imagery.s3.us-west-2.amazonaws.com/index.html)"
+- Description: Notification for Missouri Statewide Aerial Imagery Collection.
   ARN: arn:aws:sns:us-west-2:092382576634:mo-gis-imagery-object_created
   Region: us-west-2
   Type: SNS Topic
 DataAtWork:
+  Tutorials
+    - Title: "Get to Know A Dataset" Missouri Statewide Imagery Collection"
+      URL: https://github.com/TVought/mo-gis-opendata/blob/main/mo-gis-imagery/get-to-know-a-dataset-mo-gis-imagery.ipynb
+      NotebookURL: https://github.com/TVought/mo-gis-opendata/blob/main/mo-gis-imagery/get-to-know-a-dataset-mo-gis-imagery.ipynb
+      AuthorName: Missouri Spatial Data Information Service
+      AuthorURL: https://data-msdis.opendata.arcgis.com/
   Tools & Applications:
     - Title: Fly MO Imagery
       URL:  https://www.flymoimagery.com/
